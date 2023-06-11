@@ -10,3 +10,18 @@ VALUES
 ('The Godfather: Part II',1974'Crime',9,'The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.','Al Pacino','Robert De Niro','Robert Duvall','Diane Keaton'),
 ('12 Angry Men',1957,'Adventure',8.9,'A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.','Henry Fonda','Lee J. Cobb','Martin Balsam','John Fiedler')
 
+SELECT Movies
+FROM Movies
+WHERE Movies.Series_Title = 'The Godfather'
+
+SELECT Movies
+FROM Movies 
+WHERE Movies.Series_Title = 'The Dark Knight'
+
+DELETE FROM Movies
+WHERE IMDB_Rating > 9;
+
+UPDATE Movies
+SET IMDB_Rating = 9.5
+WHERE Series_Title = '12 Angry Men';
+
