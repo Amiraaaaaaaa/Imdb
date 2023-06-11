@@ -38,6 +38,9 @@ def search():
         # Year of release filter
         if year_filter:
             query += " AND year = {}".format(year_filter)
+            
+         if actors_filter:
+            query += " AND actor = {}".format(actors_filter)
         
         # Execute the SQL query
         cursor.execute(query)
