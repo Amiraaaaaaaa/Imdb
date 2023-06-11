@@ -13,6 +13,7 @@ DB_PASSWORD = 'your_password'
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == 'POST':
+        #Creating request forms for the search filters
         search_criteria = request.form['search_criteria']
         genre_filter = request.form['genre_filter']
         min_rating = request.form['min_rating']
