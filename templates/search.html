@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieFinder</title>
+</head>
+<body>
+    <h1>Search for movie</h1>
+    <form action="/search" method="POST">
+        <label for="search_criteria">Movie title:</label>
+        <input type="text" name="search_criteria" id="search_criteria" required>
+        <br><br>
+        <br>
+        <label for="genre_filter">Genre:</label>
+        <select name="genre_filter" id="genre_filter">
+            <option value="">All Genres</option>
+            <option value="action">Action</option>
+            <option value="action">Adventure</option>
+            <option value="action">Animation</option>
+            <option value="action">Biography</option>
+            <option value="comedy">Comedy</option>
+            <option value="action">Crime</option>
+            <option value="drama">Drama</option>
+            <option value="action">Family</option>
+            <option value="action">Fantasy</option>
+            <option value="action">Film noir</option>
+            <option value="action">History</option>
+            <option value="action">Horror</option>
+            <option value="action">Music</option>
+            <option value="action">Musical</option>
+            <option value="action">Mystery</option>
+            <option value="action">Romance</option>
+            <option value="action">Sci-fy</option>
+            <option value="action">Sport</option>
+            <option value="action">Thriller</option>
+            <option value="action">War</option>
+            <option value="action">Western</option>
+        </select>
+        <br><br>
+        <br>
+        <label for="min_rating">Minimum Rating:</label>
+        <input type="number" name="min_rating" id="min_rating" step="0.1" min="0" max="10">
+        <br><br>
+        <br>
+        <label for="year_filter">Year of Release:</label>
+        <input type="number" name="year_filter" id="year_filter" min="1920" max="2020">
+        <br><br>
+        <br>
+        <label for="actors_filter">Actors:</label>
+        <input type="text" name="actors_filter" id="actors_filter">
+        <br><br>
+        <br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
